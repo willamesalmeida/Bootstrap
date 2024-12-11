@@ -19,6 +19,12 @@
         border-radius: 25px;
         font-weight: bold;
       }
+      .img-bordered {
+        border: 3px solid white; /* Cor do contorno */
+        border-radius: 8px;       /* Cantos arredondados */
+        padding: 5px;            /* Espaço interno */
+        display: inline-block;   /* Necessário para ajustar a imagem */
+      }
     </style>
   </head>
   <body>
@@ -197,9 +203,15 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <img src="./img/logo.svg" alt="logo da Tom's Jazzschool" class="mb-3">
-              <p>Desperte o Ritmo da Sua Alma: Entre no Mundo do Jazz!" O jazz é
-                mais do que música; é emoção, expressão e liberdade.</p>
+              <img 
+                src="./img/logo.svg"
+                alt="logo da Tom's Jazzschool"
+                class="mb-3 img-bordered"
+              />
+              <p>
+                Desperte o Ritmo da Sua Alma: Entre no Mundo do Jazz!" O jazz é
+                mais do que música; é emoção, expressão e liberdade.
+              </p>
             </div>
             <div class="col">
               <h5 class="mb-3">Links Rápidos</h5>
@@ -211,16 +223,20 @@
             <div class="col">
               <h5 class="mb-3">Receba Novidades</h5>
               <form>
-                <div class="input-group"> 
-                  
-                  <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                  />
                   <button class="btn btn-primary">Inscrever-se</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-   
       </footer>
     </main>
 
